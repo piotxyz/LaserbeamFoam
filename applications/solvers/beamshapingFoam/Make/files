@@ -1,4 +1,0 @@
-laserHeatSource/laserHeatSource.C
-beamshapingFoam.C
-
-EXE = $(FOAM_USER_APPBIN)/beamshapingFoam
