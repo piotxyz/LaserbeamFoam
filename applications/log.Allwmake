@@ -1,33 +1,38 @@
 wmake solvers
 wmake arraylaserbeamFoam
-Allwmake /Users/philipc/code/laserbeamfoam/applications/solvers/arraylaserbeamFoam
+Allwmake /home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/arraylaserbeamFoam
 wmake laserarray
-make[1]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/arraylaserbeamFoam/laserarray'
-make[1]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/arraylaserbeamFoam/laserarray'
-make[1]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/arraylaserbeamFoam'
-make[1]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/arraylaserbeamFoam'
+wmakeLnInclude: linking include files to ./lnInclude
+make[1]: Entering directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/arraylaserbeamFoam/laserarray'
+Making dependency list for source file laser_array.C
+g++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -I/opt/openfoam10/src/finiteVolume/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -IlnInclude -I. -I/opt/openfoam10/src/OpenFOAM/lnInclude -I/opt/openfoam10/src/OSspecific/POSIX/lnInclude   -fPIC -c laser_array.C -o Make/linux64GccDPInt32Opt/laser_array.o
+g++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -I/opt/openfoam10/src/finiteVolume/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -IlnInclude -I. -I/opt/openfoam10/src/OpenFOAM/lnInclude -I/opt/openfoam10/src/OSspecific/POSIX/lnInclude   -fPIC -fuse-ld=bfd -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/laser_array.o -L/opt/openfoam10/platforms/linux64GccDPInt32Opt/lib \
+    -lfiniteVolume -lmeshTools  -o /home/piot/OpenFOAM/piot-10/platforms/linux64GccDPInt32Opt/lib/libarray_laserbeamFoam.so
+make[1]: Leaving directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/arraylaserbeamFoam/laserarray'
+wmakeLnIncludeAll: running wmakeLnInclude on dependent libraries:
+    wmakeLnInclude: linking include files to incompressibleInterPhaseTransportModel//lnInclude
+make[1]: Entering directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/arraylaserbeamFoam'
+Making dependency list for source file array_laserbeamFoam.C
+g++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -Ilaserarray/lnInclude -IincompressibleInterPhaseTransportModel/lnInclude -I/opt/openfoam10/src/physicalProperties/lnInclude -I/opt/openfoam10/src/twoPhaseModels/twoPhaseMixture/lnInclude -I/opt/openfoam10/src/twoPhaseModels/interfaceProperties/lnInclude -I/opt/openfoam10/src/twoPhaseModels/incompressibleTwoPhaseMixture/lnInclude -I/opt/openfoam10/src/twoPhaseModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/opt/openfoam10/src/twoPhaseModels/twoPhaseChange/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/momentumTransportModels/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/incompressible/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/phaseIncompressible/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -I/opt/openfoam10/src/finiteVolume/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -I/opt/openfoam10/src/sampling/lnInclude -IlnInclude -I. -I/opt/openfoam10/src/OpenFOAM/lnInclude -I/opt/openfoam10/src/OSspecific/POSIX/lnInclude   -fPIC -c array_laserbeamFoam.C -o Make/linux64GccDPInt32Opt/array_laserbeamFoam.o
+g++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -Ilaserarray/lnInclude -IincompressibleInterPhaseTransportModel/lnInclude -I/opt/openfoam10/src/physicalProperties/lnInclude -I/opt/openfoam10/src/twoPhaseModels/twoPhaseMixture/lnInclude -I/opt/openfoam10/src/twoPhaseModels/interfaceProperties/lnInclude -I/opt/openfoam10/src/twoPhaseModels/incompressibleTwoPhaseMixture/lnInclude -I/opt/openfoam10/src/twoPhaseModels/immiscibleIncompressibleTwoPhaseMixture/lnInclude -I/opt/openfoam10/src/twoPhaseModels/twoPhaseChange/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/momentumTransportModels/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/incompressible/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/phaseIncompressible/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -I/opt/openfoam10/src/finiteVolume/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -I/opt/openfoam10/src/sampling/lnInclude -IlnInclude -I. -I/opt/openfoam10/src/OpenFOAM/lnInclude -I/opt/openfoam10/src/OSspecific/POSIX/lnInclude   -fPIC -fuse-ld=bfd -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/array_laserbeamFoam.o -L/opt/openfoam10/platforms/linux64GccDPInt32Opt/lib \
+    -limmiscibleIncompressibleTwoPhaseMixture -ltwoPhaseChangeModels -lmomentumTransportModels -lincompressibleMomentumTransportModels -lincompressibleInterPhaseTransportModel -lfiniteVolume -lfvModels -lfvConstraints -lmeshTools -L/home/piot/OpenFOAM/piot-10/platforms/linux64GccDPInt32Opt/lib -larray_laserbeamFoam -lOpenFOAM -ldl  \
+     -lm -o /home/piot/OpenFOAM/piot-10/platforms/linux64GccDPInt32Opt/bin/array_laserbeamFoam
+make[1]: Leaving directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/arraylaserbeamFoam'
 wmake laserbeamFoam
-make[1]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam'
+make[1]: Entering directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/laserbeamFoam'
 wmake VoFTurbulenceDamping
-make[2]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam/VoFTurbulenceDamping'
-wmake lnInclude
-make[2]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam/VoFTurbulenceDamping'
-make[2]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam/VoFTurbulenceDamping'
-make[2]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam/VoFTurbulenceDamping'
-wmake incompressibleInterPhaseTransportModel
-make[2]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam/incompressibleInterPhaseTransportModel'
-wmake lnInclude
-make[2]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam/incompressibleInterPhaseTransportModel'
-make[2]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam/incompressibleInterPhaseTransportModel'
-make[2]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam/incompressibleInterPhaseTransportModel'
-wmake laserHeatSource
-make[1]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam'
-make[1]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam'
-make[1]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/laserbeamFoam'
-wmake multiComponentlaserbeamFoam
-Allwmake /Users/philipc/code/laserbeamfoam/applications/solvers/multiComponentlaserbeamFoam
-wmake multiphaseMixture
-make[1]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/multiComponentlaserbeamFoam/multiphaseMixture'
-make[1]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/multiComponentlaserbeamFoam/multiphaseMixture'
-make[1]: Entering directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/multiComponentlaserbeamFoam'
-make[1]: Leaving directory '/Volumes/OpenFOAM-10/caseSensitiveUserCode/laserbeamfoam/applications/solvers/multiComponentlaserbeamFoam'
+make[2]: Entering directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/laserbeamFoam/VoFTurbulenceDamping'
+wmakeLnInclude: linking include files to ./lnInclude
+make[2]: Leaving directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/laserbeamFoam/VoFTurbulenceDamping'
+make[2]: Entering directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/laserbeamFoam/VoFTurbulenceDamping'
+Making dependency list for source file VoFTurbulenceDamping.C
+g++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -I/opt/openfoam10/src/physicalProperties/lnInclude -I/opt/openfoam10/src/twoPhaseModels/twoPhaseMixture/lnInclude -I/opt/openfoam10/src/twoPhaseModels/interfaceProperties/lnInclude -I/opt/openfoam10/src/twoPhaseModels/incompressibleTwoPhaseMixture/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/momentumTransportModels/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/incompressible/lnInclude -I/opt/openfoam10/src/finiteVolume/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -IlnInclude -I. -I/opt/openfoam10/src/OpenFOAM/lnInclude -I/opt/openfoam10/src/OSspecific/POSIX/lnInclude   -fPIC -c VoFTurbulenceDamping.C -o Make/linux64GccDPInt32Opt/VoFTurbulenceDamping.o
+g++ -std=c++14 -m64 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -I/opt/openfoam10/src/physicalProperties/lnInclude -I/opt/openfoam10/src/twoPhaseModels/twoPhaseMixture/lnInclude -I/opt/openfoam10/src/twoPhaseModels/interfaceProperties/lnInclude -I/opt/openfoam10/src/twoPhaseModels/incompressibleTwoPhaseMixture/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/momentumTransportModels/lnInclude -I/opt/openfoam10/src/MomentumTransportModels/incompressible/lnInclude -I/opt/openfoam10/src/finiteVolume/lnInclude -I/opt/openfoam10/src/meshTools/lnInclude -IlnInclude -I. -I/opt/openfoam10/src/OpenFOAM/lnInclude -I/opt/openfoam10/src/OSspecific/POSIX/lnInclude   -fPIC -fuse-ld=bfd -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/VoFTurbulenceDamping.o -L/opt/openfoam10/platforms/linux64GccDPInt32Opt/lib \
+    -lphysicalProperties -ltwoPhaseMixture -lmomentumTransportModels -lincompressibleMomentumTransportModels -lfiniteVolume -lmeshTools  -o /opt/openfoam10/platforms/linux64GccDPInt32Opt/lib/libVoFTurbulenceDamping.so
+/usr/bin/ld.bfd: cannot open output file /opt/openfoam10/platforms/linux64GccDPInt32Opt/lib/libVoFTurbulenceDamping.so: Permission denied
+collect2: error: ld returned 1 exit status
+make[2]: *** [/opt/openfoam10/wmake/makefiles/general:181: /opt/openfoam10/platforms/linux64GccDPInt32Opt/lib/libVoFTurbulenceDamping.so] Error 1
+make[2]: Leaving directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/laserbeamFoam/VoFTurbulenceDamping'
+make[1]: *** [/opt/openfoam10/wmake/makefiles/apps:39: VoFTurbulenceDamping] Error 2
+make[1]: Leaving directory '/home/piot/dev/sb/lbf/LaserbeamFoam/applications/solvers/laserbeamFoam'
+make: *** [/opt/openfoam10/wmake/makefiles/apps:39: laserbeamFoam] Error 2
